@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+body {
+    line-height: 1.5;
+    color: #333;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #333;
+}
+
+p {
+    color:#000000;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: #dbe1ea;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000000;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0a1f32;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #0a1f32;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 2.5rem 0;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+header p {
+    color: #dbe1ea;
+    font-size: 1.5rem;
+    margin: 0.3rem 0;
+}
+
+/* Section Styles */
+#section-g {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+#section-c {
+    background-color: rgb(62, 190, 188);
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+#section-y {
+    background-color: #cbc347;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+#section-m {
+    background-color: #e168d1;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+/* Link Styling*/
+a {
+    color: #dbe1ea;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #6a677b;
+}
+
+/* Flexbox Styling */
+.flex-container {
+    display: flex;
+    height: 50vh;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    overflow-y: auto;
+}
+
+.flex-image img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: fill;
+    transition: transform 0.3s ease;
+}
+
+.flex-image:hover {
+    transform: translateY(-4px);  
+}
+
+/* Grid Styling */
+.grid-container {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+    gap: 0.5rem;
+    overflow-y: auto;
+}
+  
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Maintains correct video proportions */
+}
+  
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.form {
+    font-size: 1rem;
+}
+
+/* Nav bar styling */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    background-color: #454444;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+/* Responsive Design */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #dbe1ea;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: rgb(139, 132, 132);
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* Subtle Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #21273f;
+}
+
+body {
+    line-height: 1.5;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #333;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 2.5rem 0;
+    background: linear-gradient(135deg, #ffffff 0%, #6ab2c9 100%);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0a1d32;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    color: #213b63;
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+}
+
+/* Section Styles */
+section {
+    background: #c9e2ed;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+h2 {
+    color: #0a1f32;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #393838;
+}
+
+h3 {
+    color: #275368;
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+/* List Styles */
+ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+li {
+    margin: 0.5rem 0;
+    color: #566782;
+}
+
+/* Footer Styles */
+footer p {
+    text-align: left;
+    padding: 2rem 0;
+    color: #85929c;
+    font-size: 0.9rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #3d3d3d;
+    margin: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+/* Links Styles */
+a {
+    color: #dbe1ea;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #6a677b;
+}
+
+/* Contact information styles */
+.contact-info {
+    line-height: 2;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #2c3e50;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    margin: 0 2px;
+}
+
+.contact-link:hover {
+    opacity: 0.5;
+}
+
+.contact-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Nav bar addition */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    background-color: #454444;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+/* Responsive Design */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: rgb(139, 132, 132);
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* Subtle Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
